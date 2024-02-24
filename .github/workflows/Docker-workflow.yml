@@ -23,6 +23,7 @@ jobs:
       - name: Build
         run: mvn -ntp compile
       - name: Short tests
-        run: mvn -ntp test -Dtest='CalculatorTest'
+        run: ./gradlew build
+        run: ./gradlew test
       - name: Long tests
-        run: mvn -ntp test -Dtest='CalculatorTestThourough'
+        run: mvn -ntp test -Dtest='CalculatorTestThorough'
